@@ -1,0 +1,61 @@
+algoritmo "Programa Conversão"
+// Função :
+// Autor : Guilherme Batista Correia
+// Data : 21/10/2021
+// Seção de Declarações 
+var
+  varFahrenheit, varCelsius, varDolar, varReal, qtdDolar, qtdReal, cotacaoD, cotacaoR: real
+  opcaoMenu: inteiro
+inicio
+REPITA
+    Escreval(" ------------MENU------------- ")
+    Escreval(" 1 - Converter para Fahrenheit")
+    Escreval(" 2 - Converter para Celsius")
+    Escreval(" 3 - Converter para Dolar")
+    Escreval(" 4 - Converter para Real")
+    Escreval(" 5 - Atualizar")
+    Escreval(" 6 - Sair do Programa")
+    escreval("----------------------------")
+    leia(opcaoMenu)
+
+       escolha opcaoMenu
+       caso 1
+      escreval(" Informe o valor em Celsius")
+      leia(varCelsius)
+          varFahrenheit <-(varCelsius * 1.8) + 32
+          escreval(" O valor em Fahrenheit é: ", varFahrenheit, "Fahrenheit")
+          
+       caso 2
+      escreval(" Informe o valor em Fahrenheit")
+      leia(varFahrenheit)
+          varcelsius <- (varFahrenheit - 32) / 1.8
+          escreval(" O valor em Celsius é: ", varCelsius, "Celsius")
+          
+        caso 3
+        escreval("Informe a cotação do Dólar: ")
+        leia(cotacaoD)
+        escreval("Informe a quantidade em Real: ")
+        leia(qtdReal)
+         qtdDolar <- qtdReal * cotacaoD
+         escreval("Você precisa de: ",qtdReal," R$", " para comprar: ",qtdDolar, "$")
+
+         
+         caso 4
+        escreval("Informe a cotação do Real: ")
+        leia(cotacaoR)
+        escreval("Informe a quantidade em Dólar: ")
+        leia(qtdDolar)
+         qtdReal <- qtdDolar * cotacaoR
+         escreval("Você precisa de: ",qtdDolar, " $ Para comprar: ",qtdReal, "R$")
+
+          caso 5
+           limpatela
+          fimescolha
+
+
+     ATE opcaoMenu = 6
+fimalgoritmo
+
+
+
+
