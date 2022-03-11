@@ -1,8 +1,8 @@
-algoritmo "Programa Conversão"
-// Função :
+algoritmo "Programa ConversÃ£o"
+// FunÃ§Ã£o :
 // Autor : Guilherme Batista Correia
 // Data : 21/10/2021
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
   varFahrenheit, varCelsius, varDolar, varReal, qtdDolar, qtdReal, cotacaoD, cotacaoR: real
   opcaoMenu: inteiro
@@ -23,30 +23,30 @@ REPITA
       escreval(" Informe o valor em Celsius")
       leia(varCelsius)
           varFahrenheit <-(varCelsius * 1.8) + 32
-          escreval(" O valor em Fahrenheit é: ", varFahrenheit, "Fahrenheit")
+          escreval(" O valor em Fahrenheit Ã©: ", varFahrenheit, "Fahrenheit")
           
        caso 2
       escreval(" Informe o valor em Fahrenheit")
       leia(varFahrenheit)
           varcelsius <- (varFahrenheit - 32) / 1.8
-          escreval(" O valor em Celsius é: ", varCelsius, "Celsius")
+          escreval(" O valor em Celsius Ã©: ", varCelsius, "Celsius")
           
         caso 3
-        escreval("Informe a cotação do Dólar: ")
+        escreval("Informe a cotaÃ§Ã£o do DÃ³lar: ")
         leia(cotacaoD)
         escreval("Informe a quantidade em Real: ")
         leia(qtdReal)
          qtdDolar <- qtdReal * cotacaoD
-         escreval("Você precisa de: ",qtdReal," R$", " para comprar: ",qtdDolar, "$")
+         escreval("VocÃª precisa de: ",qtdReal," R$", " para comprar: ",qtdDolar, "$")
 
          
          caso 4
-        escreval("Informe a cotação do Real: ")
+        escreval("Informe a cotaÃ§Ã£o do Real: ")
         leia(cotacaoR)
-        escreval("Informe a quantidade em Dólar: ")
+        escreval("Informe a quantidade em DÃ³lar: ")
         leia(qtdDolar)
          qtdReal <- qtdDolar * cotacaoR
-         escreval("Você precisa de: ",qtdDolar, " $ Para comprar: ",qtdReal, "R$")
+         escreval("VocÃª precisa de: ",qtdDolar, " $ Para comprar: ",qtdReal, "R$")
 
           caso 5
            limpatela
